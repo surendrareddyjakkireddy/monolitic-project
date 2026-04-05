@@ -1,58 +1,102 @@
-       # microservices-project
-                 +----------------------+
-                 |  Eureka Server       |
-                 | (Service Registry)   |
-                 +----------+-----------+
-                            |
-        -----------------------------------------
-        |                                       |
-+----------------------+         +----------------------+
-| Student Service      |         | Course Service       |
-| (Eureka Client)      |         | (Eureka Client)      |
-+----------------------+         +----------------------+
-**school-student-service Http methods** 
+teacher-controller
+
+
 PUT
-/api/student/updateStudent
+/api/teacher/v1/updateTeacher
 
 POST
-/api/student/createStudent
+/api/teacher/v1/createTeacher
 
 GET
-/api/student/getFlux
+/api/teacher/v1/findByTeacherId
 
 GET
-/api/student/getEnrollment
-
-GET
-/api/student/findById
-
-GET
-/api/student/findAll
+/api/teacher/v1/findAllTeachers
 
 DELETE
-/api/student/delete
+/api/teacher/v1/deleteTeacher
+student-enquiry-controller
 
-**school-course-service Http methods**
-PUT
-/api/course/update
 
 PUT
-/api/course/updateEnrolment
+/api/studentEnquiry/v1/updateStudentEnquiry
 
 POST
-/api/course/create
-
-POST
-/api/course/createEnrollment
+/api/studentEnquiry/v1/createStudentEnquiry
 
 GET
-/api/course/findById
+/api/studentEnquiry/v1/findByIdStudentEnquiry
 
 GET
-/api/course/findAll
-
-GET
-/api/course/findAllEnrollment
+/api/studentEnquiry/v1/findAllStudentEnquiry
 
 DELETE
-/api/course/delete
+/api/studentEnquiry/v1/deleteStudentEnquiry
+section-controller
+
+
+PUT
+/api/section/v1/updateSection
+
+POST
+/api/section/v1/createSection
+
+GET
+/api/section/v1/findBySectionId
+
+GET
+/api/section/v1/findAllSections
+
+DELETE
+/api/section/v1/deleteSection
+school-controller
+
+
+PUT
+/api/school/v1/updateSchool
+
+POST
+/api/school/v1/createSchool
+
+GET
+/api/school/v1/findById
+
+GET
+/api/school/v1/findAllSchools
+
+DELETE
+/api/school/v1/deleteSchool
+class-controller
+
+
+PUT
+/api/class/v1/updateClass
+
+POST
+/api/class/v1/createClass
+
+GET
+/api/class/v1/findByClassId
+
+GET
+/api/class/v1/findAllClass
+
+DELETE
+/api/class/v1/deleteClass
+address-controller
+
+
+PUT
+/api/address/v1/updateAddress
+
+POST
+/api/address/v1/createAddress
+
+GET
+/api/address/v1/findByAddressId
+
+GET
+/api/address/v1/findAllAddress
+
+DELETE
+/api/address/v1/deleteAddress
